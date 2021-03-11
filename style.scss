@@ -55,13 +55,15 @@
     --ion-color-light-tint: #f5f6f9;
 }
 body{
-    font-size: 20px;
+    font-size: 2em;
+      font-family: 'Lato', sans-serif;
+      text-align: center;
 }
 .newgame{
     &_href{
 text-decoration: none;
 color:var(--ion-color-medium);
-vertical-align: middle;
+
     }
 }
 
@@ -71,3 +73,30 @@ vertical-align: middle;
  vertical-align: middle;
     }
 
+#point{
+     vertical-align: middle;
+color:red;
+font-size: .5rem;
+    }
+
+.vertical-align
+{
+     vertical-align: middle;
+     
+}
+.ionicon-fill-none {
+	fill: red ;
+}
+.total{
+    color:red;
+    font-size: 4rem;
+}
+.resultat{
+    background-color: red;
+    &-titre{
+        color:#000000;
+    }
+    &-nombre{
+        color:white;
+    }
+}

@@ -56,18 +56,50 @@
 }
 
 body {
-  font-size: 20px;
+  font-size: 2em;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
 }
 
 .newgame_href {
   text-decoration: none;
   color: var(--ion-color-medium);
-  vertical-align: middle;
 }
 
 #newgame_plus {
   color: red;
   font-size: 2rem;
   vertical-align: middle;
+}
+
+#point {
+  vertical-align: middle;
+  color: red;
+  font-size: .5rem;
+}
+
+.vertical-align {
+  vertical-align: middle;
+}
+
+.ionicon-fill-none {
+  fill: red;
+}
+
+.total {
+  color: red;
+  font-size: 4rem;
+}
+
+.resultat {
+  background-color: red;
+}
+
+.resultat-titre {
+  color: #000000;
+}
+
+.resultat-nombre {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

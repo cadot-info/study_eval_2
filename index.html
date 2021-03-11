@@ -20,29 +20,45 @@
 <body>
     <ion-app>
         <ion-grid>
-            <ion-row class="padding-top ">
-                <ion-col class="ion-text-center newgame">
-                    <a href="#" onclick="new_game()" class="newgame_href">
+            <ion-row class="padding-top">
+                <ion-col class="h1-center newgame">
+                    <h3></h3>
+                    <a href="#" onclick="new_game()" class="newgame_href vertical-align">
+
                         <ion-icon name="add-circle-outline" id="newgame_plus"></ion-icon> NEW GAME
+
                     </a>
+                    </h3>
                 </ion-col>
             </ion-row>
-            <ion-row>
-                <ion-col>
-                    <div>
-                        1 of 3
-                    </div>
+            <ion-row class="player_1">
+                <ion-col size="auto">
+                    <ion-row>
+                        <ion-col>
+                            <h2 class="vertical-align">
+                                <span class="joueur">PLAYER 1</span>
+                                <ion-icon name="radio-button-on" id="point"></ion-icon>
+                            </h2>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <h1 class="total">43</h1>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col class="resultat">
+                            <h3 class="resultat-titre">Current</h3>
+                            <h2 class="resultat-nombre">11</h2>
+                        </ion-col>
+                    </ion-row>
                 </ion-col>
                 <ion-col>
                     <div>
                         2 of 3
                     </div>
                 </ion-col>
-                <ion-col>
-                    <div>
-                        3 of 3
-                    </div>
-                </ion-col>
+
             </ion-row>
         </ion-grid>
     </ion-app>
