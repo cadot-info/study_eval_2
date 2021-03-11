@@ -15,6 +15,8 @@
     <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -64,13 +66,25 @@
                         </ion-col>
                     </ion-row>
                 </ion-col>
-                <ion-col size="5" id="player2">
-
+                <ion-col size="5" id="player1">
+                    <ion-row class="ion-justify-content-center">
+                        <ion-col size="12" class="ion-align-self-center">
+                            <h1 class="vertical-align" id="player1">
+                                <span class="joueur">PLAYER 1</span>
+                                <ion-icon name="radio-button-on" id="point"></ion-icon>
+                            </h1>
+                            <h1 class="total">43</h1>
+                        </ion-col>
+                        <ion-col size="3" class="resultat ion-align-self-end">
+                            <h3 class="resultat-titre">Current</h3>
+                            <h4 class="resultat-nombre">11</h4>
+                        </ion-col>
+                    </ion-row>
                 </ion-col>
             </ion-row>
         </ion-grid>
     </ion-app>
 </body>
-<scrip type="text/babel" src="app.js"> </scrip>
+<script type="text/babel" src="app.js"> </script>
 
 </html>

@@ -1,5 +1,3 @@
-import 'jquery';
-//fonction pour relancer le jeux
 const new_game = () => {
-
+    $('#player2').append($('#player1'))
 }
