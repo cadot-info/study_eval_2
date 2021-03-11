@@ -23,51 +23,38 @@
         <ion-grid>
             <ion-row class="padding-top">
                 <ion-col size="5" id="player1">
-                    <ion-row>
-                        <ion-col>
-                            <h2 class="vertical-align" id="player1">
+                    <ion-row class="ion-justify-content-center">
+                        <ion-col size="12" class="ion-align-self-center">
+                            <h1 class="vertical-align" id="player1">
                                 <span class="joueur">PLAYER 1</span>
                                 <ion-icon name="radio-button-on" id="point"></ion-icon>
-                            </h2>
-                        </ion-col>
-                    </ion-row>
-                    <ion-row>
-                        <ion-col>
+                            </h1>
                             <h1 class="total">43</h1>
                         </ion-col>
-                    </ion-row>
-                    <ion-row class="ion-justify-content-center">
-                        <ion-col size="3" class="resultat">
+                        <ion-col size="3" class="resultat ion-align-self-end">
                             <h3 class="resultat-titre">Current</h3>
                             <h2 class="resultat-nombre">11</h2>
                         </ion-col>
                     </ion-row>
                 </ion-col>
                 <ion-col size="2" id="commun">
-                    <ion-row>
-                        <ion-col class="h1-center commun-titre">
+                    <ion-row class="ion-justify-content-center">
+                        <ion-col size="12" class="h1-center commun-titre">
                             <h3>
                                 <a href="#" onclick="new_game()" class="href">
                                     <ion-icon name="add-circle-outline" id="commun_icon"></ion-icon> NEW GAME
                                 </a>
                             </h3>
                         </ion-col>
-                    </ion-row>
-                    <ion-row id="de">
-                        <ion-col id="imgde">6</div>
+                        <ion-col size="12" id="imgde" class="ion-align-self-center">
+                            6
                         </ion-col>
-                    </ion-row>
-                    <ion-row id="rollDice">
-                        <ion-col class="h1-center rollDice-titre">
+                        <ion-col size="12" class="h1-center rollDice-titre ion-align-self-end">
                             <h3>
                                 <a href="#" onclick="rollDice()" class="href">
                                     <ion-icon name="sync-outline" id="rollDice_icon"></ion-icon>ROLL DICE
                                 </a>
                             </h3>
-                        </ion-col>
-                    </ion-row>
-                    <ion-row id="hold">
-                        <ion-col class="h1-center hold-titre">
                             <h3>
                                 <a href="#" onclick="hold()" class="href">
                                     <ion-icon name="download-outline" id="hold_icon"></ion-icon> HOLD

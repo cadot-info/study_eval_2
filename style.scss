@@ -61,8 +61,22 @@ body {
     text-align: center;
 
 }
-h1,h2,h3{
+
+h1,
+h2,
+h3 {
     font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-weight: 200;
+}
+
+h2 {
+    font-weight: 200;
+}
+
+h3 {
     font-weight: 300;
 }
 
@@ -71,8 +85,12 @@ ion-app {
 }
 
 ion-grid {
-    background:linear-gradient(to right,rgb(216, 216, 216),rgb(216, 216, 216) 49.99%,rgb(255,255,255) 50%,rgb(255,255,255));
+    background: linear-gradient(to right, rgb(216, 216, 216), rgb(216, 216, 216) 49.99%, rgb(255, 255, 255) 50%, rgb(255, 255, 255));
     margin: 20px;
+}
+
+ion-row {
+    min-height: 100%;
 }
 
 #player1 {
@@ -127,6 +145,7 @@ ion-grid {
 
 .resultat {
     background-color: red;
+    margin-bottom: 7rem;
 
     &-titre {
         color: #000000;
@@ -135,4 +154,8 @@ ion-grid {
     &-nombre {
         color: white;
     }
+}
+
+.rollDice-titre {
+    margin-bottom: 7rem;
 }
