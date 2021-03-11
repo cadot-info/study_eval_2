@@ -128,7 +128,8 @@ ion-row {
     @extend %icon;
 }
 
-#point {
+#point0,
+#point1 {
     vertical-align: middle;
     color: red;
     font-size: .5rem;

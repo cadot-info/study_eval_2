@@ -6,6 +6,7 @@ const new_game = () => {
 }
 var ROUND = [0, 0]
 var GLOBAL = [0, 0]
+var gamer = 0
 const rollDice = () => {
     var positionx = [0, 0, -130, 100, -130, 100];
     var positiony = [0, 100, 100, 100, 0, 0];
@@ -14,13 +15,35 @@ const rollDice = () => {
     var de = Math.floor((Math.random() * 6) + 1);
     $('#imgde').css('background-position-x', positionx[de - 1] + 'px').css('background-position-y', positiony[de - 1] + 'px')
     if (de != 1) {
-        ROUND[1] += de;
-        $($('.resultat-nombre')[0]).text(ROUND[1]);
+        ROUND[gamer] += de;
+        $($('.resultat-nombre')[gamer]).text(ROUND[gamer]);
     }
     else {
-        ROUND[1] = 0;
-        $($('.resultat-nombre')[0]).text(0);
+        ROUND[gamer] = 0;
+        $($('.resultat-nombre')[gamer]).text(0);
+        changement()
+    }
+}
+const hold = () => {
+    GLOBAL[gamer] += ROUND[gamer]
+    ROUND[gamer] = 0;
+    $($('.resultat-nombre')[gamer]).text(ROUND[gamer]);
+    $($('.total')[gamer]).text(GLOBAL[gamer]);
+    changement()
+}
+$('#imgde').show();
+
+const changement = () => {
+    //changement de joueur
+    if (gamer == 0) {
+        gamer = 1;
+        $('#point1').show();
+        $('#point0').hide();
+    }
+    else {
+        gamer = 0;
+        $('#point0').show();
+        $('#point1').hide();
     }
 
 }
-$('#imgde').show();
