@@ -7,6 +7,7 @@ const init = () => {
     GLOBAL = [0, 0]
     gamer = 0
 }
+//function de relancement du jeu
 const new_game = () => {
     //raz des compteurs + caché dé
     $('#imgde').hide()
@@ -16,7 +17,8 @@ const new_game = () => {
     $('#point1').hide();
     init();
 }
-
+//function lancé le dé
+//un petit délire de déplacement du background plutôt que charger 6 images
 const rollDice = () => {
     var positionx = [0, 0, -131, 100, -131, 100];
     var positiony = [0, 100, 100, 100, 0, 0];
@@ -34,11 +36,15 @@ const rollDice = () => {
         changement()
     }
 }
+//function sauvegarde
 const hold = () => {
     GLOBAL[gamer] += ROUND[gamer]
     ROUND[gamer] = 0;
     $($('.resultat-nombre')[gamer]).text(ROUND[gamer]);
     $($('.total')[gamer]).text(GLOBAL[gamer]);
+    //record battu?
+    if (GLOBAL[gamer] >= 100)
+        alert('Le joueur ' + (gamer + 1) + ' à gagné!!');
     changement()
 }
 $('#imgde').show();
