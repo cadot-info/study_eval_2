@@ -15,6 +15,9 @@ const new_game = () => {
     $('.resultat-nombre').text('0');
     $('#point0').show();
     $('#point1').hide();
+    $($('.joueur')[0]).css('font-weight', 700);
+    $($('.joueur')[1]).css('font-weight', 200);
+
     init();
 }
 //function lancé le dé
@@ -55,11 +58,15 @@ const changement = () => {
         gamer = 1;
         $('#point1').show();
         $('#point0').hide();
+        $($('.joueur')[1]).css('font-weight', 700);
+        $($('.joueur')[0]).css('font-weight', 200);
     }
     else {
         gamer = 0;
         $('#point0').show();
         $('#point1').hide();
+        $($('.joueur')[1]).css('font-weight', 200);
+        $($('.joueur')[0]).css('font-weight', 700);
     }
 
 }
