@@ -1,14 +1,24 @@
+var ROUND = [0, 0]
+var GLOBAL = [0, 0]
+var gamer = 0
+//function d'initialisation des variable
+const init = () => {
+    ROUND = [0, 0]
+    GLOBAL = [0, 0]
+    gamer = 0
+}
 const new_game = () => {
     //raz des compteurs + caché dé
     $('#imgde').hide()
     $('.total').text('0');
     $('.resultat-nombre').text('0');
+    $('#point0').show();
+    $('#point1').hide();
+    init();
 }
-var ROUND = [0, 0]
-var GLOBAL = [0, 0]
-var gamer = 0
+
 const rollDice = () => {
-    var positionx = [0, 0, -130, 100, -130, 100];
+    var positionx = [0, 0, -131, 100, -131, 100];
     var positiony = [0, 100, 100, 100, 0, 0];
     // on affiche le dé
     $('#imgde').show()
