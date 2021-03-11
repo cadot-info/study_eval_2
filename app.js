@@ -1,3 +1,5 @@
 const new_game = () => {
-    $('#player2').append($('#player1'))
+    //raz des compteurs + caché dé
+    $('#imgde').hide()
+
 }
