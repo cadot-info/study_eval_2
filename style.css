@@ -61,12 +61,33 @@ body {
   text-align: center;
 }
 
-.newgame_href {
-  text-decoration: none;
-  color: var(--ion-color-medium);
+h1, h2, h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
 }
 
-#newgame_plus {
+ion-app {
+  background: -webkit-gradient(linear, left top, left bottom, from(#b18957), to(#814f38));
+  background: linear-gradient(#b18957, #814f38);
+}
+
+ion-grid {
+  background: -webkit-gradient(linear, left top, right top, from(#d8d8d8), color-stop(49.99%, #d8d8d8), color-stop(50%, white), to(white));
+  background: linear-gradient(to right, #d8d8d8, #d8d8d8 49.99%, white 50%, white);
+  margin: 20px;
+}
+
+#player1 {
+  margin-top: 3rem;
+}
+
+.href {
+  text-decoration: none;
+  color: var(--ion-color-medium);
+  vertical-align: middle;
+}
+
+#commun_icon, #rollDice_icon, #hold_icon {
   color: red;
   font-size: 2rem;
   vertical-align: middle;

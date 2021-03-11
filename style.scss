@@ -54,49 +54,85 @@
     --ion-color-light-shade: #d7d8da;
     --ion-color-light-tint: #f5f6f9;
 }
-body{
+
+body {
     font-size: 2em;
-      font-family: 'Lato', sans-serif;
-      text-align: center;
-}
-.newgame{
-    &_href{
-text-decoration: none;
-color:var(--ion-color-medium);
+    font-family: 'Lato', sans-serif;
+    text-align: center;
 
-    }
+}
+h1,h2,h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
 }
 
- #newgame_plus{
- color: red;
- font-size: 2rem;
- vertical-align: middle;
-    }
-
-#point{
-     vertical-align: middle;
-color:red;
-font-size: .5rem;
-    }
-
-.vertical-align
-{
-     vertical-align: middle;
-     
+ion-app {
+    background: linear-gradient(#b18957, #814f38)
 }
+
+ion-grid {
+    background:linear-gradient(to right,rgb(216, 216, 216),rgb(216, 216, 216) 49.99%,rgb(255,255,255) 50%,rgb(255,255,255));
+    margin: 20px;
+}
+
+#player1 {
+    margin-top: 3rem;
+}
+
+//colone du centre avec boutons communs
+
+.href {
+    text-decoration: none;
+    color: var(--ion-color-medium);
+    vertical-align: middle;
+}
+
+%icon {
+    color: red;
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+#commun_icon {
+    @extend %icon;
+}
+
+#rollDice_icon {
+    @extend %icon;
+}
+
+#hold_icon {
+    @extend %icon;
+}
+
+#point {
+    vertical-align: middle;
+    color: red;
+    font-size: .5rem;
+}
+
+.vertical-align {
+    vertical-align: middle;
+
+}
+
 .ionicon-fill-none {
-	fill: red ;
+    fill: red;
 }
-.total{
-    color:red;
+
+.total {
+    color: red;
     font-size: 4rem;
 }
-.resultat{
+
+.resultat {
     background-color: red;
-    &-titre{
-        color:#000000;
+
+    &-titre {
+        color: #000000;
     }
-    &-nombre{
-        color:white;
+
+    &-nombre {
+        color: white;
     }
 }

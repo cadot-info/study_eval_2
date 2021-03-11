@@ -10,7 +10,8 @@
     <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <link rel="stylesheet" href="http://code.ionicframework.com/1.3.3/css/ionic.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100,300;400&display=swap" rel="stylesheet">
     <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
@@ -18,13 +19,13 @@
 </head>
 
 <body>
-    <ion-app>
-        <ion-grid fixed="100%">
+    <ion-app class="margin">
+        <ion-grid>
             <ion-row class="padding-top">
-                <ion-col size="4" class="player1">
+                <ion-col size="5" id="player1">
                     <ion-row>
                         <ion-col>
-                            <h2 class="vertical-align">
+                            <h2 class="vertical-align" id="player1">
                                 <span class="joueur">PLAYER 1</span>
                                 <ion-icon name="radio-button-on" id="point"></ion-icon>
                             </h2>
@@ -35,30 +36,48 @@
                             <h1 class="total">43</h1>
                         </ion-col>
                     </ion-row>
-                    <ion-row>
-                        <ion-col class="resultat">
+                    <ion-row class="ion-justify-content-center">
+                        <ion-col size="3" class="resultat">
                             <h3 class="resultat-titre">Current</h3>
                             <h2 class="resultat-nombre">11</h2>
                         </ion-col>
                     </ion-row>
                 </ion-col>
-                <ion-col size="4">
+                <ion-col size="2" id="commun">
                     <ion-row>
-                        <ion-col class="h1-center newgame">
-                            <h3></h3>
-                            <a href="#" onclick="new_game()" class="newgame_href vertical-align">
-
-                                <ion-icon name="add-circle-outline" id="newgame_plus"></ion-icon> NEW GAME
-
-                            </a>
+                        <ion-col class="h1-center commun-titre">
+                            <h3>
+                                <a href="#" onclick="new_game()" class="href">
+                                    <ion-icon name="add-circle-outline" id="commun_icon"></ion-icon> NEW GAME
+                                </a>
+                            </h3>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row id="de">
+                        <ion-col id="imgde">6</div>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row id="rollDice">
+                        <ion-col class="h1-center rollDice-titre">
+                            <h3>
+                                <a href="#" onclick="rollDice()" class="href">
+                                    <ion-icon name="sync-outline" id="rollDice_icon"></ion-icon>ROLL DICE
+                                </a>
+                            </h3>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row id="hold">
+                        <ion-col class="h1-center hold-titre">
+                            <h3>
+                                <a href="#" onclick="hold()" class="href">
+                                    <ion-icon name="download-outline" id="hold_icon"></ion-icon> HOLD
+                                </a>
                             </h3>
                         </ion-col>
                     </ion-row>
                 </ion-col>
-                <ion-col size="4">
-                    <div>
-                        2 of 3
-                    </div>
+                <ion-col size="5" id="player2">
+
                 </ion-col>
             </ion-row>
         </ion-grid>
